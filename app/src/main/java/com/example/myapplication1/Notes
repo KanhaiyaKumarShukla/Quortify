@@ -1,0 +1,15 @@
+-------------------------------- *** Gson *** ---------------------------------------
+Gson is a java library , use to convert java objects into JSON or vica-versa. Gson stands for "Google's JSON."It provides a simple and flexible API for serialization and deserialization of Java objects to and from JSON format.
+you can refer is : https://www.geeksforgeeks.org/serialize-and-deserialize-json-using-gson-library-in-android/
+
+* To create Instance: val gson=Gson()
+* To convert Kotlin object into jason (serialization) :-
+        val obj=MyClass()           //any kotlin object
+        val json=gson.toJson(obj)   // kotlin object into json
+
+* To convert a JSON string back into a Kotlin object (Deserialization) :-
+        val jsonString = "{\"key\": \"value\"}"
+        val obj = gson.fromJson(jsonString, MyClass::class.java)
+        // Here, MyClass is the class of the object you want to deserialize into.
+
+*
